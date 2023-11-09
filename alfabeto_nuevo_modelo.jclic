@@ -1,0 +1,3673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="alfabeto_nuevo_modelo" version="0.1.3">
+ <settings>
+  <title>ALFABETO NUEVO MODELO</title>
+  <revision description="created" date="7/17/18" />
+  <author name="LUIS GILBERTO GRANADOS LARA" mail="lggl34@gmail.com" url="http://www.maestrosylastic.com" rol="COORDINADOR" organization="Maestrosylastic" />
+  <descriptors />
+  <cover file="Diapositiva1-resized1.jpg" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="presentacion" delay="3" />
+  <item name="menu" />
+  <item name="identifica1" delay="2" />
+  <item name="abeja" delay="3" />
+  <item name="alfabeto1" delay="3" />
+  <item name="escribe_abeja" delay="3" />
+  <item name="barco" delay="3" />
+  <item name="escribe_casa" delay="3" />
+  <item name="CLIC EN_abeja" delay="3" />
+  <item name="gato" delay="3" />
+  <item name="ASOCIA_A-I_audio-imagen" delay="3" />
+  <item name="CLIC EN_BARCO" delay="3" />
+  <item name="casa" delay="3" />
+  <item name="CLIC EN_casa" delay="3" />
+  <item name="elefante" delay="3" />
+  <item name="escribe_elefante" delay="3" />
+  <item name="CLIC EN_elefante" delay="3" />
+  <item name="escribe_isla" delay="3" />
+  <item name="memoria" delay="3" />
+  <item name="CLIC EN_DURAZNO" delay="3" />
+  <item name="lago-corto" delay="3" />
+  <item name="CLIC EN_gato" delay="3" />
+  <item name="escribe_gato" delay="3" />
+  <item name="fogata" delay="3" />
+  <item name="ASOCIA_A-I_audio-palabra" delay="3" />
+  <item name="sopa1" delay="3" />
+  <item name="durazno" delay="3" />
+  <item name="escribe_barco" delay="3" />
+  <item name="semantica_abeja" delay="3" />
+  <item name="huacal" delay="3" />
+  <item name="ASOCIA_A-I_palabra-palabra" delay="3" />
+  <item name="isla" delay="3" />
+  <item name="alfabeto_2" delay="3" />
+  <item name="jabon" delay="3" />
+  <item name="identifica_2" delay="3" />
+  <item name="escribe_nido" delay="3" />
+  <item name="koala" delay="3" />
+  <item name="escribe_koala" delay="3" />
+  <item name="escribe_ñu" delay="3" />
+  <item name="memoria_2" delay="3" />
+  <item name="limon" delay="3" />
+  <item name="escribe_limón" delay="3" />
+  <item name="lago-corto_2" delay="3" />
+  <item name="maleta" delay="3" />
+  <item name="escribe_maleta" delay="3" />
+  <item name="ASOCIA_A-I_audio-imagen_2" delay="3" />
+  <item name="nido" delay="3" />
+  <item name="ASOCIA_A-I_audio-palabra2" delay="3" />
+  <item name="ñu" delay="3" />
+  <item name="ASOCIA_A-I_palabra-palabra_2" delay="3" />
+  <item name="ocelote" delay="3" />
+  <item name="escribe_ocelote" delay="3" />
+  <item name="pato" delay="3" />
+  <item name="escribe_pato" delay="3" />
+  <item name="queso" delay="3" />
+  <item name="escribe_queso" delay="3" />
+  <item name="alfabeto_3" delay="3" />
+  <item name="raton" delay="3" />
+  <item name="escribe_raton" delay="3" />
+  <item name="identifica_3" delay="3" />
+  <item name="silla" delay="3" />
+  <item name="escribe_silla" delay="3" />
+  <item name="taco" delay="3" />
+  <item name="lago-corto_3" delay="3" />
+  <item name="uvas" delay="3" />
+  <item name="escribe_uvas" delay="3" />
+  <item name="vela" delay="3" />
+  <item name="escribe_vela" delay="3" />
+  <item name="memoria_3" delay="3" />
+  <item name="wapiti" delay="3" />
+  <item name="ASOCIA_A-I_audio-imagen_3" delay="3" />
+  <item name="xolo" delay="3" />
+  <item name="yoyo" delay="3" />
+  <item name="escribe_yoyo" delay="3" />
+  <item name="ASOCIA_A-I_audio-palabra_3" delay="3" />
+  <item name="zapato" delay="3" />
+  <item name="ASOCIA_A-I_palabra-palabra_3" delay="3" />
+  <item name="creditos">
+   <jump action="EXIT" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-imagen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="79.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_1.jpg" />
+    <cell image="Screenshot_2.jpg" />
+    <cell image="Screenshot_3.jpg" />
+    <cell image="Screenshot_4.jpg" />
+    <cell image="Screenshot_5.jpg" />
+    <cell image="Screenshot_6.jpg" />
+    <cell image="Screenshot_7.jpg" />
+    <cell image="Screenshot_8.jpg" />
+    <cell image="Screenshot_9.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-imagen_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="79.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_10.jpg" />
+    <cell image="Screenshot_11.jpg" />
+    <cell image="Screenshot_12.jpg" />
+    <cell image="Screenshot_13.jpg" />
+    <cell image="Screenshot_14.jpg" />
+    <cell image="Screenshot_15.jpg" />
+    <cell image="Screenshot_16.jpg" />
+    <cell image="Screenshot_17.jpg" />
+    <cell image="Screenshot_18.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-imagen_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="79.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_19.jpg" />
+    <cell image="Screenshot_20.jpg" />
+    <cell image="Screenshot_21.jpg" />
+    <cell image="Screenshot_22.jpg" />
+    <cell image="Screenshot_23.jpg" />
+    <cell image="Screenshot_24.jpg" />
+    <cell image="Screenshot_25.jpg" />
+    <cell image="Screenshot_26.jpg" />
+    <cell image="Screenshot_27.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-palabra" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="137.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="36" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>abeja</p>
+    </cell>
+    <cell>
+     <p>barco</p>
+    </cell>
+    <cell>
+     <p>casa</p>
+    </cell>
+    <cell>
+     <p>durazno</p>
+    </cell>
+    <cell>
+     <p>elefante</p>
+    </cell>
+    <cell>
+     <p>fogata</p>
+    </cell>
+    <cell>
+     <p>gato</p>
+    </cell>
+    <cell>
+     <p>huacal</p>
+    </cell>
+    <cell>
+     <p>isla</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-palabra2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="132.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="36" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>jabón</p>
+    </cell>
+    <cell>
+     <p>koala</p>
+    </cell>
+    <cell>
+     <p>limón</p>
+    </cell>
+    <cell>
+     <p>maleta</p>
+    </cell>
+    <cell>
+     <p>nido</p>
+    </cell>
+    <cell>
+     <p>ñu</p>
+    </cell>
+    <cell>
+     <p>ocelote</p>
+    </cell>
+    <cell>
+     <p>pato</p>
+    </cell>
+    <cell>
+     <p>queso</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_audio-palabra_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="131.0" cellHeight="114.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="36" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>ratón</p>
+    </cell>
+    <cell>
+     <p>silla</p>
+    </cell>
+    <cell>
+     <p>taco</p>
+    </cell>
+    <cell>
+     <p>uvas</p>
+    </cell>
+    <cell>
+     <p>vela</p>
+    </cell>
+    <cell>
+     <p>wapiti</p>
+    </cell>
+    <cell>
+     <p>xoloitzcuintle</p>
+    </cell>
+    <cell>
+     <p>yoyo</p>
+    </cell>
+    <cell>
+     <p>zapato</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_palabra-palabra" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="151.0" cellHeight="113.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="48" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+     <p>abeja</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+     <p>barco</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+     <p>casa</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+     <p>durazno</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+     <p>elefante</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+     <p>fogata</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+     <p>gato</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+     <p>huacal</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+     <p>isla</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="72" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>abeja</p>
+    </cell>
+    <cell>
+     <p>barco</p>
+    </cell>
+    <cell>
+     <p>casa</p>
+    </cell>
+    <cell>
+     <p>durazno</p>
+    </cell>
+    <cell>
+     <p>elefante</p>
+    </cell>
+    <cell>
+     <p>fogata</p>
+    </cell>
+    <cell>
+     <p>gato</p>
+    </cell>
+    <cell>
+     <p>huacal</p>
+    </cell>
+    <cell>
+     <p>isla</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_palabra-palabra_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="173.0" cellHeight="120.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+     <p>jabon</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+     <p>koala</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+     <p>limón</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+     <p>maleta</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+     <p>nido</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+     <p>ñu</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+     <p>ocelote</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+     <p>pato</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+     <p>queso</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="184.0" cellHeight="140.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="36" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>jabón</p>
+    </cell>
+    <cell>
+     <p>koala</p>
+    </cell>
+    <cell>
+     <p>limón</p>
+    </cell>
+    <cell>
+     <p>maleta</p>
+    </cell>
+    <cell>
+     <p>nido</p>
+    </cell>
+    <cell>
+     <p>ñu</p>
+    </cell>
+    <cell>
+     <p>ocelote</p>
+    </cell>
+    <cell>
+     <p>pato</p>
+    </cell>
+    <cell>
+     <p>queso</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA_A-I_palabra-palabra_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Escuchar y unir como corresponde</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+     <p>¡Perfecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="162.0" cellHeight="106.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="48" />
+     <color foreground="0x0000FF" background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+     <p>ratón</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+     <p>silla</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+     <p>taco</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+     <p>uvas</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+     <p>vela</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+     <p>wapiti</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+     <p>xoloitzcuintle</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+     <p>yoyo</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+     <p>zapato</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="164.0" cellHeight="90.0" border="true" id="secondary">
+    <style>
+     <font family="Century Gothic" size="72" bold="true" />
+     <color foreground="0x003333" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>ratón</p>
+    </cell>
+    <cell>
+     <p>silla</p>
+    </cell>
+    <cell>
+     <p>taco</p>
+    </cell>
+    <cell>
+     <p>uvas</p>
+    </cell>
+    <cell>
+     <p>vela</p>
+    </cell>
+    <cell>
+     <p>wapiti</p>
+    </cell>
+    <cell>
+     <p>xoloitzcuintle</p>
+    </cell>
+    <cell>
+     <p>yoyo</p>
+    </cell>
+    <cell>
+     <p>zapato</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_BARCO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_MUYBIEN.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_DURAZNO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="Screenshot_6.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_7.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_abeja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="1" image="Screenshot_1.jpg" />
+    <cell id="0" image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_casa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="Screenshot_6.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_MUYBIEN.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_elefante" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_5.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_PERFECTO.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="CLIC EN_gato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+     <p>Clic en</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="PRUEBA OTRA VEZ.mp3" />
+     <p>¡Prueba otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="220.0" cellHeight="258.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="Screenshot_6.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="0" image="Screenshot_4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_INTENTALO.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_7.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="abeja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+     <p>abeja</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_1.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="alfabeto1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="131.0" cellHeight="128.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>abeja</p>
+    </cell>
+    <cell id="1">
+     <p>barco</p>
+    </cell>
+    <cell id="2">
+     <p>casa</p>
+    </cell>
+    <cell id="3">
+     <p>durazno</p>
+    </cell>
+    <cell id="4">
+     <p>elefante</p>
+    </cell>
+    <cell id="5">
+     <p>fogata</p>
+    </cell>
+    <cell id="6">
+     <p>gato</p>
+    </cell>
+    <cell id="7">
+     <p>huacal</p>
+    </cell>
+    <cell id="8">
+     <p>isla</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="222.0" cellHeight="173.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+    <cell image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+    <cell image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+    <cell image="Screenshot_4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+    </cell>
+    <cell image="Screenshot_5.jpg">
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+    </cell>
+    <cell image="Screenshot_6.jpg">
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+    </cell>
+    <cell image="Screenshot_7.jpg">
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+    </cell>
+    <cell image="Screenshot_8.jpg">
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+    </cell>
+    <cell image="Screenshot_9.jpg">
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="alfabeto_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="131.0" cellHeight="128.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>jabón</p>
+    </cell>
+    <cell id="1">
+     <p>koala</p>
+    </cell>
+    <cell id="2">
+     <p>limón</p>
+    </cell>
+    <cell id="3">
+     <p>maleta</p>
+    </cell>
+    <cell id="4">
+     <p>nido</p>
+    </cell>
+    <cell id="5">
+     <p>ñu</p>
+    </cell>
+    <cell id="6">
+     <p>ocelote</p>
+    </cell>
+    <cell id="7">
+     <p>pato</p>
+    </cell>
+    <cell id="8">
+     <p>queso</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="222.0" cellHeight="173.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_10.jpg">
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+    </cell>
+    <cell image="Screenshot_11.jpg">
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+    <cell image="Screenshot_12.jpg">
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+    </cell>
+    <cell image="Screenshot_13.jpg">
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+    <cell image="Screenshot_14.jpg">
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+    <cell image="Screenshot_15.jpg">
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+    </cell>
+    <cell image="Screenshot_16.jpg">
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+    </cell>
+    <cell image="Screenshot_17.jpg">
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+    <cell image="Screenshot_18.jpg">
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="alfabeto_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="131.0" cellHeight="128.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>ratón</p>
+    </cell>
+    <cell id="1">
+     <p>silla</p>
+    </cell>
+    <cell id="2">
+     <p>taco</p>
+    </cell>
+    <cell id="3">
+     <p>uvas</p>
+    </cell>
+    <cell id="4">
+     <p>vela</p>
+    </cell>
+    <cell id="5">
+     <p>wapiti</p>
+    </cell>
+    <cell id="6">
+     <p>xoloitzcuintle</p>
+    </cell>
+    <cell id="7">
+     <p>yoyo</p>
+    </cell>
+    <cell id="8">
+     <p>zapatos</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="222.0" cellHeight="173.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="Screenshot_19.jpg">
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+    <cell image="Screenshot_20.jpg">
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+    <cell image="Screenshot_21.jpg">
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+    </cell>
+    <cell image="Screenshot_22.jpg">
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+    <cell image="Screenshot_23.jpg">
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+    </cell>
+    <cell image="Screenshot_24.jpg">
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+    </cell>
+    <cell image="Screenshot_25.jpg">
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+    </cell>
+    <cell image="Screenshot_26.jpg">
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+    <cell image="Screenshot_27.jpg">
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="barco" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+     <p>barco</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_2.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="casa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+     <p>casa</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_3.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="creditos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HASTALAPROX.mp3" />
+     <p>¡hasta la próxima!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HASTALAPROX.mp3" />
+     <p>¡hasta la próxima!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="credit.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="durazno" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+     <p>durazno</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_4.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="elefante" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+     <p>elefante</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_5.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_abeja">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>abeja</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_casa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>casa</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_uvas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_22.jpg">
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>uvas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_vela" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_23.jpg">
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>vela</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_raton" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_19.jpg">
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>ratón</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_isla" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_9.jpg">
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>isla</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_barco" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>barco</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_ñu" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_15.jpg">
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>ñu</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_yoyo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_26.jpg">
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>yoyo</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_silla" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_20.jpg">
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>silla</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_queso" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_18.jpg">
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>queso</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_pato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_17.jpg">
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>pato</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_gato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_7.jpg">
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>gato</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_ocelote" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_16.jpg">
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>ocelote</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_limón" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_12.jpg">
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>limón</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_koala" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_11.jpg">
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Century Gothic" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>koala</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_nido" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_14.jpg">
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>nido</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_maleta" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_13.jpg">
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>maleta</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="escribe_elefante" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escribe la palabra</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="542.0" cellHeight="252.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="Screenshot_5.jpg">
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="125.0" border="true" id="answers">
+    <style>
+     <font family="Berlin Sans FB Demi" size="72" bold="true" />
+     <color foreground="0x3300CC" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>elefante</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="fogata" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+     <p>fogata</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_6.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="gato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+     <p>gato</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_7.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="huacal" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+     <p>huacal</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_8.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="identifica1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="209.0" cellHeight="159.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="1" image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_5.jpg">
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_6.jpg">
+     <media type="PLAY_AUDIO" level="1" file="f.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_7.jpg">
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_8.jpg">
+     <media type="PLAY_AUDIO" level="1" file="h.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_9.jpg">
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="identifica_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="190.0" cellHeight="159.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="1" image="Screenshot_10.jpg">
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_11.jpg">
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_12.jpg">
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_13.jpg">
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_14.jpg">
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_15.jpg">
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_16.jpg">
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_17.jpg">
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_18.jpg">
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="identifica_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_HAZCLICYESCUCHA.mp3" />
+     <p>Haz clic y escucha</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="208.0" cellHeight="159.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" bold="true" />
+     <color foreground="0x3300CC" background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="1" image="Screenshot_19.jpg">
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_20.jpg">
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_21.jpg">
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_22.jpg">
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_23.jpg">
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_24.jpg">
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_25.jpg">
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_26.jpg">
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+    <cell id="1" image="Screenshot_27.jpg">
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="isla" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+     <p>isla</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_9.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="jabon" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+     <p>jabon</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_10.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="koala" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+     <p>koala</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_11.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="lago-corto" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CORTAS Y LARGAS.mp3" />
+     <p>Ordena en palabras cortas y largas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="189.0" cellHeight="83.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" bold="true" />
+     <color background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="g.mp3" />
+     <p>gato</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+     <p>casa</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+     <p>durazno</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+     <p>barco</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="i.mp3" />
+     <p>isla</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+     <p>elefante</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="290.0" cellHeight="215.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="corto.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_CORTA.mp3" />
+    </cell>
+    <cell image="largo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_LARGA.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="lago-corto_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CORTAS Y LARGAS.mp3" />
+     <p>Ordena en palabras cortas y largas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="189.0" cellHeight="83.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" bold="true" />
+     <color background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="j.mp3" />
+     <p>jabón</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+     <p>koala</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+     <p>limón</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+     <p>ocelote</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+     <p>maleta</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="e.mp3" />
+     <p>elefante</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="290.0" cellHeight="215.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="corto.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_CORTA.mp3" />
+    </cell>
+    <cell image="largo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_LARGA.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="lago-corto_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CORTAS Y LARGAS.mp3" />
+     <p>Ordena en palabras cortas y largas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="189.0" cellHeight="83.0" border="true" id="primary">
+    <style>
+     <font family="Berlin Sans FB Demi" size="36" bold="true" />
+     <color background="0x00FFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+     <p>ratón</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+     <p>silla</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+     <p>wapiti</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+     <p>xoloitzcuintle</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="t.mp3" />
+     <p>taco</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+     <p>zapato</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="290.0" cellHeight="215.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="corto.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_CORTA.mp3" />
+    </cell>
+    <cell image="largo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="CAMI_LARGA.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="limon" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="l.mp3" />
+     <p>limón</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_12.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="maleta" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+     <p>maleta</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_13.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ENCUENTRAPARES.mp3" />
+     <p>¡Encuentra los pares!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="190.0" cellHeight="211.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="Screenshot_1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+    </cell>
+    <cell image="Screenshot_2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="b.mp3" />
+    </cell>
+    <cell image="Screenshot_3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="c.mp3" />
+    </cell>
+    <cell image="Screenshot_4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="d.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ENCUENTRAPARES.mp3" />
+     <p>¡Encuentra los pares!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="190.0" cellHeight="211.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="Screenshot_13.jpg">
+     <media type="PLAY_AUDIO" level="1" file="m.mp3" />
+    </cell>
+    <cell image="Screenshot_14.jpg">
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+    </cell>
+    <cell image="Screenshot_17.jpg">
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+    </cell>
+    <cell image="Screenshot_11.jpg">
+     <media type="PLAY_AUDIO" level="1" file="k.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ENCUENTRAPARES.mp3" />
+     <p>¡Encuentra los pares!</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="190.0" cellHeight="211.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="Screenshot_20.jpg">
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+    </cell>
+    <cell image="Screenshot_22.jpg">
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+    </cell>
+    <cell image="Screenshot_26.jpg">
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+    </cell>
+    <cell image="Screenshot_19.jpg">
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="menu" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_VAMOSAJUGAR.mp3" />
+     <p>¡Elige las palabras con las que deseas jugar!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="221.0" cellHeight="533.0" border="true">
+    <style margin="1" borderStroke="1.6" markerStroke="2.7">
+     <font family="Bookman Old Style" size="72" bold="true" />
+     <color foreground="0x0000CC" background="0x99FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="men1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="alfabeto1" />
+    </cell>
+    <cell image="men2.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="alfabeto_2" />
+    </cell>
+    <cell image="men3.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="identifica_3" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="nido" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="n.mp3" />
+     <p>nido</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_14.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ocelote" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="o.mp3" />
+     <p>ocelote</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_16.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="pato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="p.mp3" />
+     <p>pato</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_17.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="presentacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_BIENVENIDO.mp3" />
+     <p>¡Bienvenido!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Diapositiva1-resized1.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="queso" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="q.mp3" />
+     <p>queso</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_18.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="raton" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="r.mp3" />
+     <p>raton</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_19.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="semantica_abeja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_UNE_PARECIDAS.mp3" />
+     <p>Une las palabras que se parecen</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_GENIAL.mp3" />
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFCC33">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="151.0" cellHeight="115.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="28" />
+     <color foreground="0x0000FF" background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>alma</p>
+    </cell>
+    <cell id="1">
+     <p>bala</p>
+    </cell>
+    <cell id="1">
+     <p>beso</p>
+    </cell>
+    <cell id="0">
+     <p>amor</p>
+    </cell>
+    <cell id="1">
+     <p>boda</p>
+    </cell>
+    <cell id="0">
+     <p>ama</p>
+    </cell>
+    <cell id="0">
+     <p>aro</p>
+    </cell>
+    <cell id="0">
+     <p>ala</p>
+    </cell>
+    <cell id="1">
+     <p>burro</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="307.0" cellHeight="153.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="Screenshot_1.jpg" />
+    <cell image="Screenshot_2.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="silla" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="s.mp3" />
+     <p>silla</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_20.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ENCUENTRALASP.mp3" />
+     <p>Encuentra las palabras</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ESTUPENDO.mp3" />
+     <p>¡estupendo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+   </settings>
+   <textGrid rows="7" columns="8" cellWidth="73.0" cellHeight="48.0" border="true">
+    <style margin="5" borderStroke="0.7" markerStroke="5.0">
+     <font family="Lucida Sans Unicode" size="17" bold="true" />
+     <color foreground="0x660066" background="0xFFFFCC" />
+    </style>
+    <text>
+     <row>ISLA**E</row>
+     <row>ABEJA*L</row>
+     <row>*****GE</row>
+     <row>FOGATAF</row>
+     <row>*****TA</row>
+     <row>*BARCON</row>
+     <row>******T</row>
+     <row>******E</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ISLA</clue>
+    <clue id="1">ABEJA</clue>
+    <clue id="2">ELEFANTE</clue>
+    <clue id="3">FOGATA</clue>
+    <clue id="4">BARCO</clue>
+    <clue id="5">GATO</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="103.0" cellHeight="65.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>isla</p>
+    </cell>
+    <cell>
+     <p>abeja</p>
+    </cell>
+    <cell>
+     <p>elefante</p>
+    </cell>
+    <cell>
+     <p>fogata</p>
+    </cell>
+    <cell>
+     <p>gato</p>
+    </cell>
+    <cell>
+     <p>barco</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="taco" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="a.mp3" />
+     <p>taco</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_21.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="uvas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="u.mp3" />
+     <p>uvas</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_22.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="vela" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="v.mp3" />
+     <p>vela</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_23.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="wapiti" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="w.mp3" />
+     <p>wapiti</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_24.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="xolo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="x.mp3" />
+     <p>xoloitzcuintle</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_25.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="yoyo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="y.mp3" />
+     <p>yoyo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_26.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="zapato" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="z.mp3" />
+     <p>zapato</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_27.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="ñu" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="CAMI_ROMPECABEZAS.mp3" />
+     <p>Ordena el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="ñ.mp3" />
+     <p>ñu</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="Screenshot_15.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="corto.jpg" file="corto.jpg" />
+  <media name="credit.jpg" file="credit.jpg" />
+  <media name="Diapositiva1-resized.jpg" file="diapositiva1-resized.jpg" />
+  <media name="Diapositiva1-resized1.jpg" file="diapositiva1-resized1.jpg" />
+  <media name="Diapositiva1-resized2.jpg" file="diapositiva1-resized2.jpg" />
+  <media name="largo.jpg" file="largo.jpg" />
+  <media name="men1.jpg" file="men1.jpg" />
+  <media name="men2.jpg" file="men2.jpg" />
+  <media name="men3.jpg" file="men3.jpg" />
+  <media name="Screenshot_1.jpg" file="screenshot_1.jpg" />
+  <media name="Screenshot_10.jpg" file="screenshot_10.jpg" />
+  <media name="Screenshot_11.jpg" file="screenshot_11.jpg" />
+  <media name="Screenshot_12.jpg" file="screenshot_12.jpg" />
+  <media name="Screenshot_13.jpg" file="screenshot_13.jpg" />
+  <media name="Screenshot_14.jpg" file="screenshot_14.jpg" />
+  <media name="Screenshot_15.jpg" file="screenshot_15.jpg" />
+  <media name="Screenshot_16.jpg" file="screenshot_16.jpg" />
+  <media name="Screenshot_17.jpg" file="screenshot_17.jpg" />
+  <media name="Screenshot_18.jpg" file="screenshot_18.jpg" />
+  <media name="Screenshot_19.jpg" file="screenshot_19.jpg" />
+  <media name="Screenshot_2.jpg" file="screenshot_2.jpg" />
+  <media name="Screenshot_20.jpg" file="screenshot_20.jpg" />
+  <media name="Screenshot_21.jpg" file="screenshot_21.jpg" />
+  <media name="Screenshot_22.jpg" file="screenshot_22.jpg" />
+  <media name="Screenshot_23.jpg" file="screenshot_23.jpg" />
+  <media name="Screenshot_24.jpg" file="screenshot_24.jpg" />
+  <media name="Screenshot_25.jpg" file="screenshot_25.jpg" />
+  <media name="Screenshot_26.jpg" file="screenshot_26.jpg" />
+  <media name="Screenshot_27.jpg" file="screenshot_27.jpg" />
+  <media name="Screenshot_3.jpg" file="screenshot_3.jpg" />
+  <media name="Screenshot_4.jpg" file="screenshot_4.jpg" />
+  <media name="Screenshot_5.jpg" file="screenshot_5.jpg" />
+  <media name="Screenshot_6.jpg" file="screenshot_6.jpg" />
+  <media name="Screenshot_7.jpg" file="screenshot_7.jpg" />
+  <media name="Screenshot_8.jpg" file="screenshot_8.jpg" />
+  <media name="Screenshot_9.jpg" file="screenshot_9.jpg" />
+  <media name="a.mp3" file="a.mp3" />
+  <media name="b.mp3" file="b.mp3" />
+  <media name="c.mp3" file="c.mp3" />
+  <media name="CAMI_BIENVENIDO.mp3" file="cami_bienvenido.mp3" />
+  <media name="CAMI_CORTA.mp3" file="cami_corta.mp3" />
+  <media name="CAMI_ENCUENTRALASP.mp3" file="cami_encuentralasp.mp3" />
+  <media name="CAMI_ENCUENTRAPARES.mp3" file="cami_encuentrapares.mp3" />
+  <media name="CAMI_ESTUPENDO.mp3" file="cami_estupendo.mp3" />
+  <media name="CAMI_GENIAL.mp3" file="cami_genial.mp3" />
+  <media name="CAMI_HASTALAPROX.mp3" file="cami_hastalaprox.mp3" />
+  <media name="CAMI_HAZCLICYESCUCHA.mp3" file="cami_hazclicyescucha.mp3" />
+  <media name="CAMI_INTENTALO.mp3" file="cami_intentalo.mp3" />
+  <media name="CAMI_LARGA.mp3" file="cami_larga.mp3" />
+  <media name="CAMI_MUYBIEN.mp3" file="cami_muybien.mp3" />
+  <media name="CAMI_PERFECTO.mp3" file="cami_perfecto.mp3" />
+  <media name="CAMI_ROMPECABEZAS.mp3" file="cami_rompecabezas.mp3" />
+  <media name="CAMI_UNE_PARECIDAS.mp3" file="cami_une_parecidas.mp3" />
+  <media name="CAMI_VAMOSAJUGAR.mp3" file="cami_vamosajugar.mp3" />
+  <media name="CAMILA_ALFABETO.mp3" file="camila_alfabeto.mp3" />
+  <media name="CORRECTO.mp3" file="correcto.mp3" />
+  <media name="CORTAS Y LARGAS.mp3" file="cortas_y_largas.mp3" />
+  <media name="d.mp3" file="d.mp3" />
+  <media name="e.mp3" file="e.mp3" />
+  <media name="ENCUENTRA LAS PALABRAS2.mp3" file="encuentra_las_palabras2.mp3" />
+  <media name="encuentra palabras.mp3" file="encuentra_palabras.mp3" />
+  <media name="encuentra pares.mp3" file="encuentra_pares.mp3" />
+  <media name="EXCELENTE.mp3" file="excelente.mp3" />
+  <media name="f.mp3" file="f.mp3" />
+  <media name="g.mp3" file="g.mp3" />
+  <media name="h.mp3" file="h.mp3" />
+  <media name="haz clic y escucha.mp3" file="haz_clic_y_escucha.mp3" />
+  <media name="i.mp3" file="i.mp3" />
+  <media name="INTENTA DE NUEVO.mp3" file="intenta_de_nuevo.mp3" />
+  <media name="j.mp3" file="j.mp3" />
+  <media name="k.mp3" file="k.mp3" />
+  <media name="l.mp3" file="l.mp3" />
+  <media name="m.mp3" file="m.mp3" />
+  <media name="n.mp3" file="n.mp3" />
+  <media name="o.mp3" file="o.mp3" />
+  <media name="ordena rompecabezas.mp3" file="ordena_rompecabezas.mp3" />
+  <media name="p.mp3" file="p.mp3" />
+  <media name="PRUEBA OTRA VEZ.mp3" file="prueba_otra_vez.mp3" />
+  <media name="q.mp3" file="q.mp3" />
+  <media name="r.mp3" file="r.mp3" />
+  <media name="s.mp3" file="s.mp3" />
+  <media name="t.mp3" file="t.mp3" />
+  <media name="u.mp3" file="u.mp3" />
+  <media name="v.mp3" file="v.mp3" />
+  <media name="w.mp3" file="w.mp3" />
+  <media name="x.mp3" file="x.mp3" />
+  <media name="y.mp3" file="y.mp3" />
+  <media name="z.mp3" file="z.mp3" />
+  <media name="ñ.mp3" file="0n.mp3" />
+ </mediaBag>
+</JClicProject>
+
